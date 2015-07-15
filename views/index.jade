@@ -1,0 +1,31 @@
+extends ./layout.jade
+block content
+	div.container
+		#players
+			if _players
+				table.table.table-striped
+					thead
+						tr
+							th Player Name
+							th Ranking
+					tbody
+						for player in _players
+							tr
+								td #{player.user_name}
+								td #{player.elo}
+						
+			else
+				label no players found
+		#add-player
+			form(action='/players',method='post', class='form-horizontal')
+				fieldset
+					legend Create Player
+					#control-group
+						label(class='control-label' for='player_name') Player
+						#controls
+							input(id='player_name', name='player_name', type='text', class='input-medium' required)
+					#control-group
+						#controls
+							button(id='create_player', name='create_player', class='btn btn-primary') Create
+						
+			

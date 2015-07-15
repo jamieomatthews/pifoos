@@ -1,0 +1,46 @@
+{
+  "name": "pongbot",
+  "version": "0.9.0",
+  "description": "Pongbot for Slack.",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "",
+    "express": "^4.10.6",
+    "express-hal": "",
+    "jade": "^1.11.0",
+    "mongoose": "",
+    "mongoose-pages": "",
+    "node-slack": "^0.0.5",
+    "path": "^0.11.14",
+    "pluralize": "",
+    "q": "",
+    "request": "",
+    "underscore": ""
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": ">=1.1.2"
+  },
+  "devDependencies": {
+    "mocha": "",
+    "chai": "",
+    "chai-string": "",
+    "sinon": "",
+    "jshint": "",
+    "supertest": ""
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --timeout=10s",
+    "lint": "./node_modules/jshint/bin/jshint lib test -c .jshint",
+    "start": "node app.js"
+  },
+  "author": "Andrew Vy",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewvy/slack-pongbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andrewvy/slack-pongbot/issues"
+  }
+}
